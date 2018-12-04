@@ -1,0 +1,17 @@
+{
+  "name": "big",
+  "description": "",
+  "main": "",
+  "authors": [
+    "max <ig_max@mail.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/maxxruss/portfolio_main.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
