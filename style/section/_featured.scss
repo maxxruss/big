@@ -1,0 +1,105 @@
+.featured {
+  background: #ffffff;
+  min-height: auto;
+}
+.featured__header_head {
+  @include media-breakpoint-down(xs) {
+    letter-spacing: 0;
+  }
+}
+.featured__header_text {
+  text-align: center;
+}
+.featured__wrapImage {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  @include media-breakpoint-down(md) {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+.featured__image1 {
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+.featured__image1>img {
+  max-width: 800px;
+  width: 100%;
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+  }
+}
+.featured__image2>img {
+  max-width: 350px;
+  width: 100%;
+  filter: grayscale(100%);
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+  }
+}
+.featured__image3 > img {
+  max-width: 350px;
+  width: 100%;
+  filter: grayscale(100%);
+  @include media-breakpoint-down(md) {
+    max-width: 100%;
+  }
+}
+.featured__image2, .featured__image3 {
+  position: relative;
+  @include media-breakpoint-down(md) {
+  width: 50%;
+  }
+}
+.featured__blackBlock {
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.7);
+  position: absolute;
+  top: 0;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+.featured__blackBlockText {
+  font-family: openSans, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    left: 0;
+    letter-spacing: 0;
+    font-size: 12px;
+  }
+}
+.featured__footer {
+  background: url("../images/layer85.png") no-repeat;
+  background-size: cover;
+  min-height: 113px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.featured__footer_text {
+  font-family: openSans, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: left;
+  margin: auto;
+  letter-spacing: 1.5px;
+}
+
+.featured__footer_button {
+  margin: auto;
+}

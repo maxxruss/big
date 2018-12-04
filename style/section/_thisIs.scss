@@ -1,0 +1,34 @@
+.thisIs {
+  height: auto;
+  min-height: 480px;
+}
+.thisIs__Img {
+  background: url("../images/ipad.png") no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 350px;
+  margin-top: 60px;
+  @include media-breakpoint-down(sm) {
+    background-position: center;
+  }
+}
+.thisIs__Block_header {
+  margin-top: 100px;
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+}
+.thisIs__Block_Text {
+  margin-top: 40px;
+  max-width: 430px;
+  text-align: left;
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+}
+.thisIs__Block_Button {
+  margin-top: 30px;
+  @include media-breakpoint-down(sm) {
+    margin: 30px auto 0;
+  }
+}

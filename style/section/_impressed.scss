@@ -1,0 +1,38 @@
+.impressed {
+  background: url("../images/layer4.png") no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+.impressed__monitor {
+  text-align: center;
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+}
+.impressed__monitor>img {
+  max-width: 409px;
+  width: 100%;
+  margin-top: -7%;
+  position: relative;
+  @include media-breakpoint-down(md) {
+    margin: 0;
+  }
+}
+.impressed__bouncy>img {
+  max-width: 136px;
+  width: 100%;
+  position: absolute;
+  top: 23%;
+  left: 40%;
+  @include media-breakpoint-down(md) {
+    top: 33%;
+    left: 43%;
+    width: 140px;
+    margin: 0 auto;
+  }
+  @include media-breakpoint-down(xs) {
+    top: 33%;
+    left: 40%;
+    width: 90px;
+  }
+}

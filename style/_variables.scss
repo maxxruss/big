@@ -1,0 +1,80 @@
+@font-face {
+  font-family: bigJohn;
+  src: url("../packages/fonts/bigJohn.otf");
+}
+@font-face {
+  font-family: openSans;
+  src: url("../packages/fonts/openSansLight.ttf");
+}
+@font-face {
+  font-family: roboto;
+  src: url("../packages/fonts/roboto.ttf");
+}
+@font-face {
+  font-family: sourceSansPro;
+  src: url("../packages/fonts/SourceSansProLight.ttf");
+}
+.blockCentreSmall {
+      max-width: 860px;
+      margin: 0 auto;
+}
+.blockCentre {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.headerCentre {
+  max-width: 450px;
+  margin: 40px auto;
+  text-align: center;
+}
+.textCentre {
+  max-width: 450px;
+  margin: 40px auto;
+  text-align: center;
+}
+.textHeaderGray {
+  font-family: sourceSansPro, sans-serif;
+  color:  #333b46;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
+.textHeaderWhite {
+  font-family: sourceSansPro, sans-serif;;
+  color:  #f3f3f3;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
+.textWhite {
+  font-family: openSans, sans-serif;
+  color:  #b2b3b3;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  max-width: 450px;
+  margin: 40px auto;
+}
+.textGray {
+  font-family: openSans, sans-serif;
+  color:  #81868e;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  max-width: 450px;
+  margin: 40px auto;
+}
+.background__white {
+  background: white;
+}
+.background__gray {
+  background: #f3f3f3;
+}

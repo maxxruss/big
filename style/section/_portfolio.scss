@@ -1,0 +1,135 @@
+.portfolio {
+  background: #f3f3f3;
+}
+.portfolio__header_head {
+  @include media-breakpoint-down(xs) {
+    letter-spacing: 0;
+  }
+}
+.portfolio__menu {
+  text-align: center;
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+.portfolio__items {
+  display: inline-block;
+  &>a {
+    text-decoration: none;
+    font-family: openSans, sans-serif;
+    color:  #81868e;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 30px;
+    &:hover {
+      border: 0;
+      border-bottom: 1.5px solid #19bd9a;
+      margin-right: 30px;
+      margin-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+.portfolio__imgWrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 1000px;
+  align-content: center;
+  position: relative;
+  @include media-breakpoint-down(lg) {
+    height: 1500px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 2000px;
+  }
+  @include media-breakpoint-down(sm) {
+    height: 3900px;
+    align-items: center;
+  }
+  @include media-breakpoint-down(xs) {
+    height: 3900px;
+    align-items: center;
+  }
+}
+.imgBorder {
+  border: 5px solid transparent;
+}
+.imgCustom {
+  position: relative;
+  &:hover {
+    .portfolio__blackBlockHover {
+      display: block;
+    }
+  }
+}
+.imgCustom>img {
+  max-width: 270px;
+  width: 100%;
+}
+.portfolio__blackBlockHover {
+  display: none;
+  background-color: rgba(0, 0, 0, .6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  &:hover {
+    display: block;
+  }
+}
+.portfolio__hoverHead {
+  font-family: sourceSansPro, sans-serif;
+  text-transform: uppercase;
+  color:  #19bd9a;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  line-height: 12px;
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 20%;
+}
+.portfolio__hoverText {
+  font-family: openSans, sans-serif;
+  color:  #b2b3b3;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 10% 15%;
+}
+.portfolio__hoverLink {
+  margin-left: 15%;
+  bottom: 15%;
+  position: absolute;
+  &>a {text-decoration: none;
+  }
+}
+.portfolio__footer {
+  background: url("../images/layer101.png") no-repeat;
+  background-size: cover;
+  height: 140px;
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.portfolio__footerText {
+  font-family: openSans, sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: left;
+  letter-spacing: 1.5px;
+  margin: 30px auto 0 auto;
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+}
+.portfolio__footerButton {
+  margin: auto;
+}

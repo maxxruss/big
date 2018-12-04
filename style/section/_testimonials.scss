@@ -1,0 +1,122 @@
+.testimonials {
+  background: #f3f3f3;
+  min-height: auto;
+}
+.testimonials__header_head {
+  @include media-breakpoint-down(xs) {
+    letter-spacing: 0;
+  }
+}
+.testimonials__header_text {
+  text-align: center;
+}
+.testimonials_carousel .testimonials_carousel-item {
+  background: #ffffff;
+  min-height: 300px ;
+  @include media-breakpoint-down(sm) {
+    min-height: 600px;
+    @include media-breakpoint-down(xs) {
+      min-height: 700px;
+    }
+  }
+}
+#carouselExampleIndicators1 {
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.1);
+}
+.testimonials__block1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.carousel-caption {
+  height: inherit;
+  top: 10%;
+}
+.testimonials__block1Left {
+  max-width: 130px;
+  width: 100%;
+}
+.testimonials__block1Right {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-width: 630px;
+}
+.testimonials__blockName {
+  padding-right: 7%;
+}
+.testimonials__span1 {
+  font-family: openSans, sans-serif;
+  color:  #19bd9a;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+  text-align: right;
+}
+.testimonials__span2 {
+  font-family: openSans, sans-serif;
+  color:  #464646;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 20px;
+  text-align: right;
+}
+.testimonials__blockText {
+  font-family: openSans, sans-serif;
+  color:  #81868e;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.carousel-indicators li {
+  background: rgba(0, 0, 0, .3);
+}
+.carousel-indicators .active {
+  background: black;
+}
+.testimonials__footer {
+  background: url("../images/layer441h500.png") no-repeat;
+  background-size: cover;
+  background-color: grayscale(100%);
+  position: relative;
+  width: 100%;
+}
+.testimonials__footer_head {
+  font-family: openSans, sans-serif;
+  color:  #b2b3b3;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 25px;
+}
+.testimonials__footer_sign {
+  font-family: openSans, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #19bd9a;;
+  margin-top: 25px
+}
+.testimonials__footer_textLeft {
+  font-family: openSans, sans-serif;
+  color:  #b2b3b3;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 25px;
+  max-width: 450px;
+  text-align: left;
+}
+.testimonials__footer_readMore {
+  font-family: openSans, sans-serif;
+  color:  #b2b3b3;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 50px;
+}
