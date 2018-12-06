@@ -5,28 +5,39 @@
 }
 .impressed__monitor {
   text-align: center;
+  //position: relative;
+  height: 100%;
   @include media-breakpoint-down(md) {
     text-align: center;
   }
 }
-.impressed__monitor>img {
+
+.impressed__img_monitor {
   max-width: 409px;
   width: 100%;
   margin-top: -7%;
-  position: relative;
+
   @include media-breakpoint-down(md) {
     margin: 0;
   }
 }
-.impressed__bouncy>img {
+
+.impressed__img_bounsy {
   max-width: 136px;
   width: 100%;
   position: absolute;
   top: 23%;
-  left: 40%;
+  left: 43%;
+
+  @include media-breakpoint-down(lg) {
+    top: 33%;
+    left: 38%;
+    width: 140px;
+    margin: 0 auto;
+  }
   @include media-breakpoint-down(md) {
     top: 33%;
-    left: 43%;
+    left: 42%;
     width: 140px;
     margin: 0 auto;
   }

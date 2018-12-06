@@ -5,12 +5,31 @@
   background-size: cover;
 }
 .header__companyName {
+  display: inline-block;
+  border: transparent solid 1px;
+  height: 33px;
+  width: 150px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50px 50px 50px 50px;
   color: #ffffff;
   font-family: bigJohn, sans-serif;
   font-weight: 400;
   font-size: 25px;
   margin-top: 47px;
   margin-left: 98px;
+  &:hover {
+    border: white solid 1px;
+    border-radius: 50px 50px 50px 50px;
+  }
+  &>a {
+    display: block;
+    font-family: openSans, sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
   @include media-breakpoint-down(md) {
     margin-left: 0;
     text-align: center;

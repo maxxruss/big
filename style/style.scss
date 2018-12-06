@@ -4,18 +4,17 @@
 body {
   width: 100%;
 }
-@import "block/_button.scss";
-@import "block/_icons.scss";
+
 @import "header/_header.scss";
-@import "section/_thisIs.scss";
-@import "section/_details.scss";
-@import "section/_featured.scss";
-@import "section/_impressed.scss";
-@import "section/_portfolio.scss";
-@import "section/_services.scss";
-@import "section/_team.scss";
-@import "section/_testimonials.scss";
-@import "section/_price.scss";
+@import "block/thisIs";
+@import "block/details";
+@import "block/featured";
+@import "block/impressed";
+@import "block/portfolio";
+@import "block/services";
+@import "block/team";
+@import "block/testimonials";
+@import "block/price";
 @import "footer/_footer.scss";
 
 

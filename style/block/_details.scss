@@ -6,6 +6,9 @@
   text-align: center;
   text-transform: uppercase;
   margin-top: 50px;
+  @include media-breakpoint-down(sm) {
+    line-height: 20px;
+  }
 }
 .details__about_text {
   max-width: 450px;
@@ -53,4 +56,24 @@
   font-weight: 700;
   line-height: 25px;
   max-width: 450px;
+}
+
+.details__about_wrapIcon {
+  flex-direction: row;
+  justify-content: center;
+  @include media-breakpoint-down(xs) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+  }
+}
+.details__about_icon {
+  margin: 0 15px;
+  &:nth-child(1) {
+    background: #19bd9a;
+  }
+  &:nth-child(2) {
+    line-height: 40px;
+  }
 }

@@ -12,6 +12,25 @@
   margin: 40px auto;
   text-align: center;
 }
+
+.services__iconsWrap {
+  flex-direction: column;
+  align-items: flex-end;
+}
+.services__icons {
+  margin-bottom: 20px;
+  &:nth-child(2) {
+    background: #19bd9a;
+  }
+  @include media-breakpoint-down(md) {
+    margin: 20px;
+
+  }
+  @include media-breakpoint-down(xs) {
+    margin: 0 0 20px;
+  }
+}
+
 .services__icons_adaptive {
   @include media-breakpoint-down(md) {
     flex-direction: row;
